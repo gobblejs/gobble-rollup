@@ -17,7 +17,7 @@ npm i -D gobble-rollup
 ```js
 var gobble = require( 'gobble' );
 module.exports = gobble( 'src' ).transform( 'rollup', {
-  // required - the file to start bundling from
+  // REQUIRED - the file to start bundling from
   entry: 'app.js',
 
   // where to write the file to. If omitted,
@@ -25,13 +25,21 @@ module.exports = gobble( 'src' ).transform( 'rollup', {
   dest: 'bundle.js',
 
   // what type of module to create - can be one of
-  // 'amd', 'cjs', 'es6', 'umd'. Defaults to 'cjs'
+  // 'amd', 'cjs', 'es6', 'iife', 'umd'. Defaults to 'cjs'
   format: 'umd',
 
   // if generating a 'umd' module, and the entry module
   // (and therefore the bundle) has exports, specify
   // a global name
-  globalName: 'myApp' // becomes `window.myApp`
+  moduleName: 'myApp', // becomes `window.myApp`
+
+  // if generated 'amd' or 'umd', you can specify a
+  // moduleId which will be used by AMD loaders
+  moduleId: 'my-app',
+
+  // set export type explicitly - 'named', 'default' or 'none'.
+  // By default this will be set automatically
+  exports: 'default'
 });
 ```
 

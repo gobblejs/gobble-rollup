@@ -1,12 +1,12 @@
 {
   "name": "gobble-rollup",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bundle ES6 modules with gobble and rollup",
   "author": "Rich Harris",
   "license": "MIT",
   "repository": "https://github.com/gobblejs/gobble-rollup",
   "dependencies": {
-    "rollup": "^0.2.0"
+    "rollup": "^0.3.1"
   },
   "keywords": [
     "gobble",
