@@ -13,7 +13,9 @@ module.exports = function rollup ( inputdir, outputdir, options ) {
 	}).then( function ( bundle ) {
 		return bundle.write( path.join( outputdir, dest ), {
 			format: options.format || 'cjs',
-			globalName: options.globalName
+			moduleId: options.moduleId,
+			moduleName: options.moduleName,
+			globals: options.globals
 		});
 	})
 };
