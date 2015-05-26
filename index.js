@@ -2,20 +2,14 @@ var path = require( 'path' );
 var r = require( 'rollup' );
 
 module.exports = function rollup ( inputdir, outputdir, options ) {
-	var entry = options.entry;
-	var dest = options.dest || options.entry;
+	if ( !options.entry || !options.dest ) {
+		throw new Error( 'You must supply `entry` and `dest` options' );
+	}
 
-	if ( entry.slice( -3 ) !== '.js' ) entry += '.js';
-	if ( dest.slice( -3 ) !== '.js' )  dest += '.js';
+	options.entry = path.resolve( inputdir, options.entry );
+	options.dest = path.resolve( outputdir, options.dest );
 
-	return r.rollup( path.join( inputdir, entry ), {
-		resolvePath: options.resolvePath
-	}).then( function ( bundle ) {
-		return bundle.write( path.join( outputdir, dest ), {
-			format: options.format || 'cjs',
-			moduleId: options.moduleId,
-			moduleName: options.moduleName,
-			globals: options.globals
-		});
+	return r.rollup( options ).then( function ( bundle ) {
+		return bundle.write( options );
 	})
 };
