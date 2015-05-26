@@ -1,5 +1,9 @@
 # gobble-rollup changelog
 
+## 0.2.0
+
+* Upgrade rollup, update to 0.6 API
+
 ## 0.1.2
 
 * Upgrade rollup
