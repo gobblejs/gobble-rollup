@@ -1,5 +1,9 @@
 # gobble-rollup changelog
 
+## 0.2.1
+
+* `options.dest` is optional - defaults to the same as `options.entry`
+
 ## 0.2.0
 
 * Upgrade rollup, update to 0.6 API
