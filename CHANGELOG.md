@@ -1,5 +1,9 @@
 # gobble-rollup changelog
 
+## 0.4.0
+
+* Upgrade rollup to 0.8.0
+
 ## 0.3.1
 
 * `options.dest` is optional - defaults to the same as `options.entry`
