@@ -1,5 +1,9 @@
 # gobble-rollup changelog
 
+## 0.5.0
+
+* Upgrade rollup to 0.10.0
+
 ## 0.4.0
 
 * Upgrade rollup to 0.8.0
