@@ -1,5 +1,9 @@
 # gobble-rollup changelog
 
+## 0.8.1
+
+* ARGH git fail
+
 ## 0.8.0
 
 * Upgrade rollup to 0.16.0
