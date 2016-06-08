@@ -39,11 +39,13 @@ module.exports = gobble( 'src' ).transform( 'rollup', {
 
   // set export type explicitly - 'named', 'default' or 'none'.
   // By default this will be set automatically
-  exports: 'default'
+  exports: 'default',
+
+  // disable caching, in case that's necessary for
+  // some reason
+  cache: false
 });
 ```
-
-**Note: rollup is in early development, and things will likely change before it becomes suitable for general use.**
 
 ## License
 

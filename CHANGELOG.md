@@ -1,5 +1,10 @@
 # gobble-rollup changelog
 
+## 0.29.0
+
+* Upgrade Rollup to 0.29
+* Support incremental rebuilds
+
 ## 0.27.0
 
 * Upgrade Rollup to 0.27
