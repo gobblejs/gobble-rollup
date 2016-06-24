@@ -1,5 +1,9 @@
 # gobble-rollup changelog
 
+## 0.33.0
+
+* UPdate Rollup to 0.33
+
 ## 0.29.0
 
 * Upgrade Rollup to 0.29
