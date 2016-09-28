@@ -1,5 +1,9 @@
 # gobble-rollup changelog
 
+## 0.35.0
+
+* Update Rollup to 0.35
+
 ## 0.34.0
 
 * Update Rollup to 0.34
