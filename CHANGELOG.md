@@ -4,6 +4,18 @@
 
 * Update Rollup to 0.40
 
+## 0.36.0
+
+* Update Rollup to 0.36
+
+## 0.35.0
+
+* Update Rollup to 0.35
+
+## 0.34.0
+
+* Update Rollup to 0.34
+
 ## 0.33.0
 
 * Update Rollup to 0.33
